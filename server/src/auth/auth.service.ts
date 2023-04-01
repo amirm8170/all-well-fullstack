@@ -22,8 +22,13 @@ export class AuthService {
   ) {}
 
   //signup or create user
-  signUp = (createUserDto: CreateUserDTO): Promise<User> => {
+  signUp = async (createUserDto: CreateUserDTO): Promise<User> => {
     this.logger.info('signup section');
+    //check if email was not registered before.
+    const user = await this.userModel.findOne({ email: createUserDto.email });
+    if (user) {
+      throw new NotFoundException('you registered before!');
+    }
     //hash password before save in db.
     const hashPassword = bcrypt.hashSync(createUserDto.password, 10);
     createUserDto.password = hashPassword;
