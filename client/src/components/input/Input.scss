@@ -1,0 +1,50 @@
+@import "../../App.scss";
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 56px;
+  padding: 15px auto;
+  @media screen and (max-width:768px) {
+    max-width:none;
+  }
+  & .input-field {
+    @include BasefontStyle;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background: var(--white);
+    border: 1px solid ;
+    border-radius: 7px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    &::placeholder {
+      @include BasefontStyle;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--placeholder);
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid var(--black);
+    }
+  }
+  & .input-icon-right {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & .input-error {
+    position: absolute;
+    top: 92%;
+    margin-top: 7px;
+    left: 20px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: var(--errorColor);
+  }
+}

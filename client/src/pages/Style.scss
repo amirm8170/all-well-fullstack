@@ -1,0 +1,49 @@
+@import "../App.scss";
+.imagePage {
+  @include windowSize;
+  & .imagePage-container {
+    @include flexStartCenter;
+    @include pageWithImageContent;
+
+    & .imagePage-container-text {
+      @include BasefontStyle;
+      font-size: clamp(12px, 1vw, 14px);
+      color: var(--black);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      align-self: flex-start;
+      // margin-left: 0px;
+      // @media screen and (max-width: 768px) {
+      //   margin-left: 18px;
+      // }
+    }
+    & .imagePage-top-section-text {
+      @include BasefontStyle;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      color: var(--black);
+      transform: translate(-20px, -17px);
+      @media screen and (max-width: 768px) {
+        transform: translate(0px, -10px);
+      }
+    }
+    & .imagePage-botton-section-text {
+      @include BasefontStyle;
+      font-size: clamp(14px, 2vw, 18px);
+      color: var(--black);
+      position: absolute;
+      top: 100%;
+      transform: translateY(10px);
+      left: 0px;
+    }
+  }
+}
+
+.page-not-found{
+  @include flexCenterCenter;
+  width: 100%;
+  height: calc(100vh - 88px);
+  
+}
+
+

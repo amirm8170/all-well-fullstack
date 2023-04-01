@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Test</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: 'Inter';
+      }
+      div {
+        width: 606px;
+        min-height: 600px;
+        height: 100vh;
+        text-align: left;
+        padding: 60px;
+        padding-top: 150px;
+      }
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: #000000;
+        margin-top: 100px;
+        margin-left: 27px;
+        margin-bottom: 40px;
+        font-family: 'Inter';
+      }
+      a {
+        text-decoration: none;
+        padding: 20px 0px;
+        background-color: #4ee0bc;
+        color: #000000;
+        border-radius: 50px;
+        display: block;
+        width: 400px;
+        margin: 0px auto;
+        margin-bottom: 100px;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 15px;
+      }
+      a:hover {
+        opacity: 0.85;
+      }
+      img {
+        position: absolute;
+        left: 87px;
+        top: 95px;
+        width: 148.65px;
+        height: 48px;
+        display: block;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 15px;
+        letter-spacing: -0.01em;
+        color: #000000;
+        margin-left: 27px;
+        font-family: 'Inter';
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/uk4cxqxyllk1jw1egkwf"
+        alt="test"
+      />
+      <h2>
+        Hi!<br />We received a request to reset your password. Please click on
+        the link below to proceed.
+      </h2>
+      <a href="http://13.48.28.119:2000/new-password/<%=id %>"
+        >Reset your password</a
+      >
+      <h3>The All Well team</h3>
+    </div>
+  </body>
+</html>

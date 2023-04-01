@@ -1,0 +1,11 @@
+.nav-container{
+    width: 100vw;
+    height: 88px;
+    position: relative;
+    & .logo-container{
+        position: absolute;
+        top: 50%;
+        left: 54px;
+        transform: translateY(-50%);
+    }
+}

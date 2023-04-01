@@ -1,0 +1,17 @@
+@import "../../App.scss";
+
+.log-out-container {
+  position: relative;
+  @include windowSize;
+  min-height: 300px;
+  & .log-out-content {
+    @include childCenter;
+    @include flexStartCenter;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    @media screen and (max-width:650px) {
+        width: 90%;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+body {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --blue: #006eff;
+  --green: #4ee0bc;
+  --placeholder: #b1b1b1;
+  --red: #e0574e;
+  --border: #E6E6E6;
+  --inputBorder: #D8D8D8;
+  --black: #000000;
+  --white: #ffffff;
+  --errorColor:#DC3545;
+  --iconColor:#515151;
+  --transition:.3s;
+}
+
+
+
+@mixin flexStartStart{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flexStartCenter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexCenterCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenterStart{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin BasefontStyle{
+  letter-spacing: -0.01em; 
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin windowSize{
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 88px);
+  min-height: 500px;
+}
+
+@mixin childCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 2;
+}
+
+@mixin pageWithImageContent{
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.link-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+.mt-2{
+  margin-top: 2rem;
+}
+.mt-3{
+  margin-top: 3rem;
+}
+.mt-4{
+  margin-top: 4rem;
+}
+.mt-5{
+  margin-top: 5rem;
+}
+.mt-7{
+  margin-top: 7rem;
+}
+.mr-0{
+  margin-right: 0rem;
+}

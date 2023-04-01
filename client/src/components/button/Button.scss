@@ -1,0 +1,27 @@
+@import "../../App.scss";
+.btn {
+  @include BasefontStyle;
+  @include flexCenterCenter;
+  
+  width: 97%;
+  height: 56px;
+  background-color: var(--green);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+  color: var(--black);
+  padding: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  &:hover{
+    border: 1px solid var(--black);
+    opacity: .85;
+  }
+  &:disabled{
+    cursor:not-allowed;
+  }
+
+}

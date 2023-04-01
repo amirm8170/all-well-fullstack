@@ -1,0 +1,22 @@
+@import '../../App.scss';
+
+.box {
+  @include flexStartCenter;
+  position: relative;
+  width: 400px;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 34px 32px ;
+  @media screen and (max-width:1000px) {
+    width: 99%;
+  }
+  @media screen and (max-width:768px) {
+    width: 80%;
+  }
+  @media screen and (max-width:560px) {
+    width: 90%;
+    padding: 20px 10px ;
+  }
+  
+}
