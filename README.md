@@ -35,28 +35,9 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+# deploy project
+$ npm run deploy
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
 
 ## Explain application for backend:
 
@@ -75,3 +56,4 @@ define routes:
 6- GET /auth: this route protected with jwt. and can check headers of request and if Bearer token was valid so it can let user to go ahead.
 
 and the Templates folder is for ejs file that prepared for send in mail.
+```
